@@ -1,0 +1,110 @@
+<!--
+
+1. Create a table with three columns "City", "Country" and "Population". Add three rows of data.
+2. Use colspan and rowspan to create a complex table layout for a weekly schedule.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 06</title>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        Population Table
+      </caption>
+      <thead>
+        <tr>
+          <th>City</th>
+          <th>Country</th>
+          <th>Population</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>New Delhi</td>
+          <td>India</td>
+          <td>98798798</td>
+        </tr>
+        <tr>
+          <td>New York</td>
+          <td>USA</td>
+          <td>12345678</td>
+        </tr>
+        <tr>
+          <td>Moscow</td>
+          <td>Russia</td>
+          <td>456123</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <table border="1">
+      <caption>
+        Time Table
+      </caption>
+      <thead>
+        <tr>
+          <th>Day/Time</th>
+          <th>09:30 - 10:20</th>
+          <th>10:20 - 11:10</th>
+          <th>11:10 - 12:00</th>
+          <th>12:00 - 12:40</th>
+          <th>12:40 - 13:30</th>
+          <th>13:30 - 14:20</th>
+          <th>14:20 - 15:10</th>
+          <th>15:10 - 16:00</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>English</td>
+          <td>Maths</td>
+          <td>Chemistry</td>
+          <td rowspan="5">LUNCH</td>
+          <td colspan="3">LAB</td>
+          <td>Physics</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td colspan="3">LAB</td>
+          <td>English</td>
+          <td>Chemistry</td>
+          <td>Maths</td>
+          <td>SPORTS</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Maths</td>
+          <td>Physics</td>
+          <td>English</td>
+          <td>Chemistry</td>
+          <td colspan="3">LIBRARY</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Physics</td>
+          <td>English</td>
+          <td>Chemistry</td>
+          <td colspan="3">LAB</td>
+          <td>Maths</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Physics</td>
+          <td>English</td>
+          <td>Chemistry</td>
+          <td colspan="3">LAB</td>
+          <td><Maths</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

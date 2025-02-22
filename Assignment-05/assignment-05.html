@@ -1,0 +1,53 @@
+<!--
+
+1. Add an image to a webpage with the following:
+    - Set the width to 400 pixels
+    - Add an appropriate alt text and title
+2. Create a clickable image that links to an external website
+3. Create a div with a background image, ensuring it covers the entire div and is centered
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 05</title>
+    <style>
+      .div-with-background {
+        width: 100%;
+        height: 500px;
+        border: 5px solid;
+        background-image: url(https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+      alt="Google logo"
+      title="Google"
+      width="400px"
+      border="5px solid"
+    />
+
+    <hr />
+
+    <h2>Clickable Image</h2>
+    <a href="https://www.google.com/" target="_blank"
+      ><img
+        src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="Google logo"
+        title="Google"
+        width="400px"
+    /></a>
+
+    <hr />
+
+    <div class="div-with-background"></div>
+    
+  </body>
+</html>

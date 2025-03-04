@@ -1,0 +1,91 @@
+<!--
+
+1. Add a phone number field to a form that accpet only numbers
+2. Include a textarea for additional comments
+3. Add a validation to ensure the password is at least 8-characters long using the pattern attribute
+4. Style the form to center it on the page and add a background color (Styling part is optional)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 07</title>
+  </head>
+
+  <body>
+    <form>
+
+      <!-- <filedset> tag is used to group related elements  -->
+      <fieldset>
+        <legend>Enter your personal details</legend>
+        
+        <div>          
+          <label for="fname">First Name: </label>
+          <input type="text" id="fname" name="fname" />
+        </div>
+
+        <br>
+
+        <div>
+          <label for="lname">Last Name: </label>
+          <input type="text" id="lname" name="lname" />
+        </div>
+        
+        <br>
+        
+        <div>
+          <label for="user-email">Email: </label>
+          <input type="email" id="user-email" name="user-email" />
+        </div>
+
+        <br>
+
+        <div>
+          <label for="user-pass">Passowrd: </label>
+          
+          <input
+            type="password"
+            id="user-pass"
+            name="user-pass"
+            minlength="8"
+            pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,16}"
+            required
+          />
+        </div>
+
+        <br>
+
+        <div>
+          <label for="user-contact">Contact: </label>
+          <input
+            type="number"
+            id="user-contact"
+            name="user-contact"
+            minlength="10"
+            maxlength="10"
+          />
+        </div>
+
+        <br>
+
+        <div>
+          <label for="user-commnets">Commnets: </label>
+          <textarea
+            id="user-commnets"
+            name="user-commnets"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <br>
+        
+        <input type="submit" value="Submit">
+        
+      </fieldset>
+    </form>
+  </body>
+</html>

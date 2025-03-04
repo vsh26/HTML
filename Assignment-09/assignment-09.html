@@ -1,0 +1,148 @@
+<!--
+
+1. Embed a video on webpage with the following:
+    - Add controls, autoplay and a poster image
+    - Add subtitles using <track> tag
+2. Create an audio player with two different audio formats
+3. Embed a YouTube video using an <iframe>
+4. Create a table listing three common video and audio formats along with their descriptions
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- autoplay="false" does not work -->
+    <video
+        controls
+        controlslist="nodownload"
+        muted
+        poster="./NkwFxeHARqc-HD.jpg"
+        width="500"
+    >
+        <source src="./videoplayback.mp4">
+
+        <track
+            default
+            kind="captions"
+            src=""
+        />
+    </video>
+
+    <hr>
+
+    <audio
+        src="./audio.mp3"
+        controls
+        controlslist="nodownload"
+    >
+    
+    </audio>
+
+    <audio
+        controls
+        controlslist="nodownload"
+    >
+        <source src="./audio-1.wav">
+    </audio>
+
+    <hr>
+
+    <iframe
+        src="https://www.youtube.com/embed/mV3VvMG4jzw?si=RCQi6KGcM65v5tOs"
+        id="inlineFrameExample"
+        title="Inline Frame Example"
+        height="300px"
+        width="500px"
+
+        allowfullscreen
+        frameborder="0">
+    </iframe>
+
+    <hr>
+
+    <table border="1">
+        <caption>
+            Common Audio and Video Formats
+        </caption>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Format</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Audio</td>
+                <td>MP3</td>
+                <td>
+                    <ul>
+                        <li>A popular format with a manageable file size</li>
+                        <li>It compresses audio data efficiently, while only losing sound data that's beyond the range of human hearing</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>WAV</td>
+                <td>
+                    <ul>
+                        <li>An uncompressed format that's a staple in the music industry</li>
+                        <li>It's a common format for CDs and offers the purest form of audio</li>
+                        <li>WAV files are large in size compared to lossless compressed formats
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>AIFF</td>
+                <td>
+                    <ul>
+                        <li>An uncompressed format that's compatible with the Mac ecosystem</li>
+                        <li>t offers high audio quality and shares many similarities with the WAV format</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Video</td>
+                <td>AVI</td>
+                <td>
+                    <ul>
+                        <li>The standard video format for Windows</li>
+                        <li>Contains both audio and video</li>
+                        <li>Uses a variety of codecs, like DivX and XviD</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>MP4</td>
+                <td>
+                    <ul>
+                        <li>The standard format for web videos and TV</li>
+                        <li>High-quality with relatively small file sizes</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>WMV</td>
+                <td>
+                    <ul>
+                        <li>A popular and widely used format</li>
+                        <li>Offers several advantages, particularly for Windows users</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</head>
+<body>
+    
+</body>
+</html>

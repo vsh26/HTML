@@ -17,9 +17,6 @@
 │-- Assignment-07                  # Forms
 │-- Assignment-08                  # Semantics, Aria Label
 │-- Assignment-09                  # Multimedia
-│-- Assignment-10                  # Creating a webpage, styling, data-* attribute
-│-- Assignment-11                  # Creating a form, embedding video, <canvas> tag
-│-- Assignment-12                  # PRD and a web page based on it
 |-- prd.md                         # Understanding PRD with an example
 ```
 
@@ -33,6 +30,9 @@ Here are some of the best resources I studied from:
 ## 🔗 Other useful resources
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+## 🚀 Projects
+- Taco Shop - [Webpage](https://taco-shop-kappa.vercel.app/) | [GitHub](https://github.com/vsh26/Taco-Shop)
 
 ## 📬 Connect with Me  
   
